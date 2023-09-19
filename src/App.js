@@ -280,7 +280,7 @@ function SelectedMovie({
         try {
           setIsLoad(true);
           const resul = await fetch(
-            `http://www.omdbapi.com/?apikey=${keymov}&i=${selectedId}`,
+            `https://www.omdbapi.com/?apikey=${keymov}&i=${selectedId}`,
             { signal: contAbrot.signal }
           );
           if (!resul.ok) {
