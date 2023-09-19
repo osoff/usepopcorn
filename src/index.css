@@ -103,7 +103,15 @@ body {
   /* background-color: var(--color-background-900); */
   background-color: var(--color-primary-light);
 }
-
+.flex {
+  display: flex;
+}
+.jcenter {
+  justify-content: center;
+}
+.icenter {
+  align-items: center;
+}
 .search::placeholder {
   color: var(--color-text-dark);
 }

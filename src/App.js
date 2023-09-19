@@ -111,7 +111,7 @@ export default function App() {
         <Box>
           {/* {isLoading ? <Loader /> : <MovieList movies={movies} />} */}
           {isLoading && (
-            <div className="loader">
+            <div className="loader flex jcenter icenter">
               <Loader />
             </div>
           )}
@@ -351,7 +351,9 @@ function SelectedMovie({
           </section>
         </>
       ) : (
-        <Loader />
+        <div className="loader h100 flex jcenter icenter">
+          <Loader />
+        </div>
       )}
     </div>
   );
